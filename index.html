@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="./js/youtube.js"></script>
+    <script src="https://vjs.zencdn.net/7.15.4/video.js"></script>
+    <script src="./php/paisajes.php"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./js/formulario.js"></script>
+    <script src="https://pagination.js.org/dist/2.1.5/pagination.min.js"></script>
+    <script src="./js/double-inputs.js"></script>
+    
+    <link href="https://vjs.zencdn.net/7.15.4/video-js.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://pagination.js.org/dist/2.1.5/pagination.css">
+    <link rel="stylesheet" href="./css/paginaprincipal.css?v=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&family=Righteous&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-one">
+        <script>
+            $(document).ready(function() {
+                // Cargar el contenido del archivo footer.html
+                $("#hero-container").load("./html/hero.html");
+            });
+        </script>
+        <div id="hero-container"></div>
+    </div>
+
+
+
+    <div class="container-two" id="aboutUs">
+        
+        <script>
+            $(document).ready(function() {
+                // Cargar el contenido del archivo footer.html
+                $("#about-container").load("./html/aboutUs.html");
+            });
+        </script>
+        <div id="about-container" class="about-container"></div>
+       
+    </div>
+
+    <div class="container-three">
+        <script>
+            $(document).ready(function() {
+                // Cargar el contenido del archivo footer.html
+                $("#paginacion").load("./html/paginacion.html");
+            });
+        </script>
+        <div id="paginacion"></div>
+    </div>
+
+    <div class="container-three">
+        <div class="container-formulario" id="scroll-form">
+            <h1>Enviar datos para que te contactemos</h1>
+            <form id="contactForm" class="formulario" action="./php/guardar_datos.php" method="post">
+                <div class="campo-formulario">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+        
+                <div class="campo-formulario">
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" id="apellido" name="apellido" required>
+                </div>
+        
+                <div class="campo-formulario">
+                    <label for="ciudad">Ciudad:</label>
+                    <input type="text" id="ciudad" name="ciudad" required>
+                </div>
+        
+                <div class="campo-formulario">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" class="input-reflejo" required>
+                </div>
+        
+                <div class="campo-formulario">
+                    <label for="telefono">Número de Celular:</label>
+                    <input type="tel" id="telefono" name="telefono" required>
+                </div>
+        
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+
+ <footer>
+    <script>
+        $(document).ready(function() {
+            // Cargar el contenido del archivo footer.html
+            $("#footer-container").load("./html/footer.html");
+        });
+    </script>
+    <div id="footer-container"></div>
+ </footer>   
+</body>
+</html>

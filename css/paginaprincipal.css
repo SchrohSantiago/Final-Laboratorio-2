@@ -1,0 +1,683 @@
+body {
+    min-height: 100vh;
+    margin: 0;
+    overflow-y: scroll;
+}
+
+.container-one {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 150px;
+    height: 100vh;
+     /* Fondo negro con 40% de opacidad */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra los elementos verticalmente */
+    background: linear-gradient(rgba(0, 0, 0, 0.9) 1%, rgba(0, 0, 0, 0.1) 55%),
+                url("../images/fondo.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+nav {
+    display: flex;
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    align-items: center;
+}
+
+a, .a-explore {
+    color: white;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    cursor: pointer;
+    transition: 0.2s;
+    margin: 0 155px; /* Separación horizontal entre elementos */
+}
+a:hover{
+    color:#FFC800;
+}
+.a-explore{
+    font-size: 15px;
+}
+
+.logo {
+    color: white;
+    font-size: 20px;
+    font-family: 'Righteous', sans-serif;
+    font-weight: 400;
+    cursor: pointer;
+    transition: 0.2s;
+    display: flex;
+    align-items: center; /* Alinea los elementos dentro del li.logo verticalmente */
+    font-size: 22px; /* Mueve el li.logo a la izquierda */
+}
+
+.logo span {
+    color: #FFC800; /* Color del texto del span */
+    font-weight: 700; /* Grosor del texto del span */
+    margin-left: 5px; /* Ajuste de margen izquierdo para separar el span del texto principal */
+}
+
+h1{
+    color: white;
+    font-family: 'Josefin Sans';
+    font-weight: 600;
+    font-size: 80px;
+}
+.h1-hero{
+    font-size: 60px;
+    line-height: 70px;
+}
+h3{
+    color: white;
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 30px;
+}
+h4{
+    color: white;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra verticalmente el contenido del main */
+    margin-left: 12%;
+    width: 90%;
+}
+
+.main-button{
+    font-family: 'Roboto';
+    font-weight: 400;
+    width: 145.931px;
+    height: 48.644px;
+    flex-shrink: 0;
+    border-radius: 4.422px;
+    background: #FFC800;
+    cursor: pointer;
+    margin-left: -152px;
+}
+
+.main-aside{
+    width: 90%;
+    margin-top: 40px;
+    display: flex;
+ 
+}
+
+aside{
+    width: 140px;
+
+}
+.follow{
+    transform: rotate(90deg);
+    font-family: 'Roboto';
+}
+.aside-content{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 70%;
+    margin-left: 300px;
+
+}
+.icons{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-card{
+    align-items: center;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+  
+}
+.letter-card{
+    font-size: 25px;
+   
+}
+.video-card{
+    height: 250px;
+    width: 240px;
+  
+    margin: 20px;
+    border-bottom: 5px solid #FFC800;
+}
+.container-video{
+    display: flex;
+}
+
+.video-center{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.container-two{
+    width: 100%;
+    margin: 0;
+     /* Fondo negro con 40% de opacidad */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about{
+    display: flex;
+    align-items: center;
+    margin-top: 7%;
+    width: 61.5%;
+    height: 60vh;
+   
+}
+
+.sub-about{
+    width: 60%;
+}
+
+.text-about{
+    color: rgba(6, 10, 64, 0.50);
+    font-family: Roboto;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 43.437px; /* 165.625% */
+    text-transform: capitalize;
+    width: 80%;
+}
+
+.color-about, .color-about-rob{
+    color: #020953;
+    font-family: Josefin Sans;
+}
+
+.color-about-rob{
+    font-family: 'Roboto';
+    font-weight: 400;
+}
+
+.image-about{
+    width: 40%;
+    height: 60vh;
+    border-radius: 70.242px 0px 69.357px 0px;
+    background: url('../images/bark.svg'), lightgray 50%; /* Tamaño de la imagen de fondo para cubrir todo el contenedor */
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+
+.services{
+    display: flex;
+    flex-direction: column;
+    margin-top: 200px;
+    width: 62%;
+    height: 60vh;
+}
+.text-services{
+    width: 65%;
+}
+.icon-services{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+.icon-card{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 80px;
+}
+.circle, .circle2, .circle3{
+    height: 19vh;
+    width: 60%;
+    background: url('../images/Group1.svg');
+    background-size: cover;
+}
+
+.circle2{
+    background: url('../images/Group2.svg');
+    background-size: cover;
+}
+
+.circle3{
+    background: url('../images/Group3.svg');
+    background-size: cover;
+}
+
+.icon-card-title{
+    color: #040E27;
+    text-align: center;
+    font-family: Josefin Sans;
+}
+
+.icon-card-subtitle{
+    color: rgba(0, 0, 0, 0.50);
+    font-family: Roboto;
+}
+
+.container-three{
+    width: 100%;
+    margin: 0;
+    margin-top: 220px;
+     /* Fondo negro con 40% de opacidad */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 200px;
+}
+.container-four{
+    width: 100%;
+    margin: 0;
+     /* Fondo negro con 40% de opacidad */
+    align-items: center;
+}
+
+.email-suscribe {
+    background: linear-gradient(rgba(0, 0, 0, 0.7) 1%, rgba(0, 0, 0, 0.7) 55%),
+                url("../images/imagenLoro.svg");
+    background-size: cover;
+    width: 100%;
+    height: 22vh;
+    opacity: 0.9; /* Para asegurarse de que la opacidad sea completa */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.h4-suscribe{
+    font-family: Roboto;
+    font-weight: 300;
+    font-family: 26px;
+    width: 70%;
+}
+
+.input-suscribe{
+    width: 385.359px;
+    height: 39.186px;
+    flex-shrink: 0;
+    border-radius: 6.538px;
+    background: #FFF;
+    border: none;
+    padding-left: 17px;
+    cursor: pointer;
+}
+
+.button-suscribe, .button-suscribe-2{
+    background: #FFC800;
+    height: 41.186px;
+    border: none;
+    color: #040E27;
+    font-family: 'Roboto';
+    width: 100px;
+    border-radius: 6.538px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.button-suscribe-2{
+    border-radius: 0px;
+    height: 44px;
+    
+}
+
+.paginationjs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-bottom: 100px;
+}
+.paginationjs-pages li.active>a {
+    height: 30px;
+    line-height: 30px;
+    background: #aaaaaa72;
+    color: black;
+}
+.paginationjs .paginationjs-pages li.paginationjs-next {
+    margin:0
+}
+.paginationjs .paginationjs-pages li:first-child{
+    margin: 0;
+}
+.paginationjs .paginationjs-pages li{
+    margin: 14px;
+}
+.paginationjs a,
+.paginationjs span {
+    padding: 8px;
+    color: white;
+    margin: 0 2px;
+    border: 1px solid #1dbe18;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    
+}
+
+.paginationjs a:hover {
+    background-color: #eee;
+}
+
+
+
+
+
+
+.container {
+    width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+ 
+}
+
+.card-container {
+  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.sub-container-card {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    flex-direction: row;
+}
+
+.card {
+    box-sizing: border-box;
+    width: calc(30% - 20px); /* Ajusta según sea necesario */
+    padding: 15px;
+    background-color: #0209530e;
+    color: #020953;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  
+}
+
+.card:last-child {
+    margin-right: 0;
+}
+
+/* Estilo de la figura dentro de la tarjeta */
+.figure {
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+
+
+.figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}    
+
+.price-card{
+    font-size: 20px;
+    font-family: 'Roboto';
+}
+.desc-card{
+    font-size: 18px;
+    font-family: 'Roboto';
+}
+
+.container-card{
+    margin-top: 170px;
+}
+
+footer{
+    margin-top: 220px;
+    width: 100%;
+    background-color: #040E27;
+    height: 435.33px;
+    display: flex;
+    flex-direction: column;
+}
+
+.text-footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container-text-footer, .container-text-footer-2{
+    width: 33%;
+    margin-left: 10%;
+}
+.container-text-footer-2{
+    margin-top: 80px;
+}
+.text-h4-footer{
+    line-height: 25px;
+    color: #FFF;
+    font-family: 'Roboto';
+    font-weight: 300;
+}
+.subcontainer-text-footer{
+    display: flex;
+    flex-direction: row;
+}
+.h4-contains{
+    margin-right: 160px;
+}
+.input-text{
+    display: flex;
+    flex-direction: row;
+}
+.input-txt{
+    width: 260.866px;
+    height: 39.82px;
+    background-color: transparent;
+    border: solid 1px white;
+}
+
+.derechs{
+    text-align: center;
+    color: white;
+    font-family: 'Roboto';
+    margin-top: 25px;
+}
+
+.icon-cross {
+    color: red;
+    font-size: 48px;
+}
+.container-modal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modal-content {
+    background-color: #e8e2e2;
+    border-radius: 5px;
+    margin: 15% auto;
+    padding: 20px;
+    border: 3px solid green;
+    width: 25%;
+    height: 220px;
+    text-align: center;
+    position: relative;
+}
+.modal-message{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.container-formulario {
+    width: 100%;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.9) 1%, rgba(0, 0, 0, 0.5) 55%),
+                url("../images/turismo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.formulario {
+    width: 25%; /* Ajusta según sea necesario */
+    margin-top: 50px; /* Ajusta según sea necesario */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #0209537b; /* Color de fondo ajustado */
+}
+
+.campo-formulario {
+    margin-bottom: 20px;
+}
+
+label {
+    color: white;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #FFF;
+    border-radius: 4px;
+    margin-top: 15px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background: #FFC800;
+    color: #040E27;
+    font-family: 'Roboto';
+    font-weight: 400;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #eee;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-snap-type: 100ms;
+}
+
+a{
+    text-decoration: none;
+}
+.letras-button{
+    font-size: 15px;
+}
+.respuesta-formulario {
+    margin-top: 10px;
+    color: #333; /* Puedes personalizar los colores según tu diseño */
+}
+
+.about-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+
+@media screen and (max-width: 1370px) {
+    .container-one{
+        display: none;
+     }
+     footer{
+        display: none;
+     }
+     .container-two{
+        display: none;
+     }
+     .container-three{
+        display: flex;
+        margin-top: 0;
+     }
+
+    .formulario{
+        width: 60%;
+    }
+    .h1-form{
+        font-size: 30px;
+    }
+    .container-card{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .card{
+        box-sizing: border-box;
+        padding: 15px;
+        background-color: #0209530e;
+        color: #020953;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 300px;
+        height: 500px;
+    }
+    .sub-container-card{
+        flex-direction: column;
+        align-items: center;
+    }
+   
+    .h1-destination{
+        font-size: 40px;
+    }
+
+    h1{
+        font-size: 30px;
+    }
+
+}
